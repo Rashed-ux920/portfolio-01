@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  
+  --first-font: "Inter", sans-serif;
+  
+  /* typography */
+
+  --bold-font: 800;
+  --thin-font: 500;
+
+  --extra-big-font: 2.5em;
+  --big-font-size: 1.9em;
+  --normal-font-size: 1.5em;
+  --small-font-size: 0.9em;
+  --smaller-font-size: 0.7em;
+
+  --spaceing-between-element: 0.9rem;
+
+  /* colors  */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #5d5a5a;
+  --color-light-gray: #fff9f9;
+  --color-light-orange: #fc530a;
+  --color-dark-orange: #d63100;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+body{
+  background: var(--color-black);
+  font-family: var(--first-font);
+}
+
+main{
+  margin: 0 10rem;
+}
+
+/* header layout */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+}
+
+.logo{
+
+  font-weight: var(--bold-font);
+  font-size: var(--big-font-size);
+  color: var(--color-white);
+
+}
+
+.logo span{
+  color: var(--color-light-orange);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid var(--color-gray);
+  padding: 1em 2rem;
+  border-radius: 20px;
+}
+
+.link{
+  margin: 0 1rem;
+  color: var(--color-light-gray);
+  font-weight: var(--thin-font);
+  font-size: var(--small-font-size);
+  transition: all 0.7s ease;
+}
+
+.link:hover, .downloadcv:hover{
+  color: var(--color-light-orange);
+}
+
+.active{
+  margin: 0 1rem;
+  color: var(--color-light-orange);
+  font-weight: var(--thin-font);
+  font-size: var(--small-font-size);
+}
+
+.downloadcv{
+  color: var(--color-white);
+  font-size: var(--normal-font-size);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease;
+}
+
+.downloadcv i{
+  font-size: var(--big-font-size);
+}
+.downloadcv div{
+  width: 100px;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--bold-font);
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  border: 2px solid var(--color-light-gray);
+  border-radius: 50px 50px 0 0;
+  border-bottom: none;
+}
+
+.home img{
+  height: 100vh;
+  width: inherit;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  z-index: -1000;
+}
+
+.leftsection{
+  color: white;
+  width: 700px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: right;
+  justify-content: center;
+  margin-left: 2.9rem;
+  margin-top: 4em;
+}
+
+.leftsection h3, .leftsection h1, .leftsection p{
+  /* font-size: var(--normal-font-size); */
+  margin: var(--spaceing-between-element) 0;
+  font-style: italic;
+}
+
+.leftsection h3{
+  font-size: var(--big-font-size);
+  font-weight: var(--thin-font);
+}
+
+.leftsection h3 span{
+  color: var(--color-light-orange);
+}
+
+.leftsection h1{
+  font-size: var(--extra-big-font);
+  font-weight: var(--bold-font);
+  color: var(--color-light-orange);
+  margin-left: var(--spaceing-between-element);
+}
+
+.leftsection h1 span{
+  color:var(--color-white)
+}
+
+.leftsection p{
+  font-size: var(--small-font-size);
+  font-weight: var(--thin-font);
+  width: 500px;
+}
+
+.button-link{
+  margin: var(--spaceing-between-element) 5em 0 0;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  width: 300px;
+}
+
+.calltoaction{
+  color: var(--color-white);
+  font-size: var(--small-font-size);
+  font-weight: var(--bold-font);
+}
+
+#action{
+  background: var(--color-light-orange);
+  border: 2px solid var(--color-white);
+  border-radius: 30px;
+  padding: 1em 2em;
+  transition: all 0.7s ease;
+}
+
+#action:hover{
+  transform: scale(1.2);
+}
+
+.rightsection img{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#rashed{
+  width: 580px;
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  top: 7%;
+}
+
