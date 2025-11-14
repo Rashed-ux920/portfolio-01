@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   
-  --first-font: "Inter", sans-serif;
+  /* icons */
+
+  --icon-size: 1.9em;
+  --svg-icon-size: 80px;
+  --position-icon-display: 500;
   
   /* typography */
+
+  --first-font: "Inter", sans-serif;
 
   --bold-font: 800;
   --thin-font: 500;
 
-  --extra-big-font: 2.5em;
-  --big-font-size: 1.9em;
+  --extra-big-font: 3.2em;
+  --big-font-size: 2.9em;
   --normal-font-size: 1.5em;
   --small-font-size: 0.9em;
   --smaller-font-size: 0.7em;
 
-  --spaceing-between-element: 0.9rem;
+  --spaceing-between-element: 0.8rem;
 
   /* colors  */
   --color-white: #ffffff;
   --color-black: #000000;
   --color-gray: #5d5a5a;
-  --color-light-gray: #fff9f9;
+  --color-light-gray: #c7c1c1;
   --color-light-orange: #fc530a;
   --color-dark-orange: #d63100;
 }
@@ -112,7 +118,7 @@ main{
 }
 
 .downloadcv i{
-  font-size: var(--big-font-size);
+  font-size: var(--icon-size);
 }
 .downloadcv div{
   width: 100px;
@@ -128,10 +134,11 @@ main{
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 85vh;
   border: 2px solid var(--color-light-gray);
   border-radius: 50px 50px 0 0;
   border-bottom: none;
+  padding-bottom: 2em;
 }
 
 .home img{
@@ -154,6 +161,7 @@ main{
   justify-content: center;
   margin-left: 2.9rem;
   margin-top: 4em;
+  padding-top: 1rem;
 }
 
 .leftsection h3, .leftsection h1, .leftsection p{
@@ -176,6 +184,7 @@ main{
   font-weight: var(--bold-font);
   color: var(--color-light-orange);
   margin-left: var(--spaceing-between-element);
+  text-transform: capitalize;
 }
 
 .leftsection h1 span{
@@ -184,8 +193,11 @@ main{
 
 .leftsection p{
   font-size: var(--small-font-size);
-  font-weight: var(--thin-font);
-  width: 500px;
+  font-weight: var(--bold-font);
+  width: 600px;
+  margin: var(--spaceing-between-element) 0 var(--spaceing-between-element) 0;
+  color: var(--color-light-gray)
+
 }
 
 .button-link{
@@ -222,6 +234,7 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* position: relative; */
 }
 
 #rashed{
@@ -232,3 +245,43 @@ main{
   top: 7%;
 }
 
+#css-logo{
+  width: var(--svg-icon-size);
+  position: absolute;
+  top: 10rem;
+  right: 28.8rem;
+  z-index: var(--position-icon-display);
+  transform: rotate(-0.5rad);
+  box-shadow: #000000;
+}
+
+#node-logo{
+  width: var(--svg-icon-size);
+  position: absolute;
+  z-index: var(--position-icon-display);
+  box-shadow: #000000;
+  top: 2rem;
+  right: 27.5rem;
+  transform: rotate(-0.7rad);
+}
+
+#html-logo{
+  width: var(--svg-icon-size);
+  z-index: var(--position-icon-display);
+  position: absolute;
+  box-shadow: #000000;
+  top: 14rem;
+  right: 22rem;
+  transform: rotate(-3deg); 
+}
+
+#figma-logo{
+  width: var(--svg-icon-size);
+  z-index: 1000;
+  position: absolute;
+  box-shadow: #000;
+  top: -8rem;
+  /* bottom: 100rem; */
+  right: 0.5rem;
+  transform: rotate(0.5rad);
+}
