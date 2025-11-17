@@ -12,9 +12,9 @@ const nav = [
             }
     },
     {
-        'experience': 
+        'experiance': 
             {
-                'id': 'experience',
+                'id': 'experiance',
             }
     },
     {

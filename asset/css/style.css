@@ -55,6 +55,10 @@ main{
   margin: 0 10rem;
 }
 
+section{
+
+}
+
 /* header layout */
 
 .header{
@@ -284,4 +288,90 @@ main{
   /* bottom: 100rem; */
   right: 0.5rem;
   transform: rotate(0.5rad);
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* box-sizing: border-box; */
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color-white);
+  border-top: none;
+  border-bottom: none;
+  /* height: 500vh; */
+}
+
+.title{
+  width: inherit;
+}
+
+.h2-content{
+  margin-top: 3rem;
+  margin-left: 3rem;
+  color: var(--color-white);
+  font-weight: var(--bold-font);
+  font-size: var(--extra-big-font);
+  
+}
+
+.h2-content span{
+  color: var(--color-light-orange) ;
+}
+
+.container{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-white);
+  width: 47%;
+  height: 20rem;
+  padding: 0.7rem;
+  background: var(--color-light-orange);
+  border-radius: 15px;
+  border: 2px solid var(--color-white);
+  box-shadow: var(--color-light-orange) 0px 8px 15px;
+  transition: all 0.7s ease;
+  overflow: hidden;
+}
+
+.skill-card:hover{
+  transform: scale(1.09);
+}
+
+.skill-card h2{
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+}
+
+.skill-card h2 i{
+  font-size: var(--normal-font-size);
+}
+
+.skill-card p{
+  color: var(--color-white);
+  font-weight: var(--thin-font);
+  font-size: var(--small-font-size);
+}
+
+.resorses{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.resorses a{
+  color: var(--color-light-gray);
 }

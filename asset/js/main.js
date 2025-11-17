@@ -1,8 +1,27 @@
-import nav from "../js/navigationbar.js";
+import nav from "../js/navigationbar.js"
+import skills from  "../js/skills.js"
+
+
 
 const navbar    = document.getElementById('navbar')
 const URL       = window.location.href
+const skillbar  = document.getElementById('skills-container') 
 
+skills.forEach(e => {
+    const card = document.createElement('div');
+    card.className = 'skill-card';
+
+    card.innerHTML = `
+        
+        <h2><i class="${e.icon}"></i> ${e.name}</h2>
+        <p>${e.information}</p>
+        <div class="resorses">
+            <a href="${e.link}">see more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    `;
+
+    skillbar.appendChild(card);
+});
 
 nav.forEach(e => {
 
